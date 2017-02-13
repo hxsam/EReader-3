@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/title_business" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/title_height"
+        android:background="#ffebebeb"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_goback"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:contentDescription="@null"
+            android:src="@drawable/share_barcode" />
+        
+         <TextView
+             android:id="@+id/tv_version"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                     android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="版本：V2.0.2(150401)" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/aboutItem" >
+
+                <TextView
+                    style="@style/aboutItemTitle"
+                    android:text="作者：天天X-Man" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/aboutItem" >
+
+                <TextView
+                    style="@style/aboutItemTitle"
+                    android:text="QQ:85062974" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/aboutItem" >
+                <TextView
+                    style="@style/aboutItemTitle"
+                    android:text="Email:zang_ql@163.com" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/aboutItem" >
+
+                <TextView
+                    style="@style/aboutItemTitle"
+                    android:text="个人作品，仅限内部使用" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

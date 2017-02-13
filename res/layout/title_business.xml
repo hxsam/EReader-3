@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/anno_menu_bg_b" >
+
+        <ImageView
+            android:id="@+id/iv_goback"
+            android:layout_width="@dimen/setting_height"
+            android:layout_height="@dimen/setting_height"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/btn_back"
+            android:onClick="OnClickBack"
+            android:contentDescription="@null" />
+        
+         <TextView
+            android:id="@+id/titlename"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/iv_goback"
+            android:text="导入图书"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+
+    </RelativeLayout>
+
+</merge>

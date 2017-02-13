@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="title_bg">#ff2c98ed</color>
+    <color name="white">#ffffff</color>
+    <color name="content_view">#663300</color>
+    <color name="content_text">#6a3906</color>
+    <color name="menu_text">#6a3906</color>
+    <color name="head_view">#ffffffff</color>
+    <color name="head_bg1">#663300</color>
+    <color name="head_bg">#fc8c1e</color>
+    <color name="transparent">#00000000</color>
+    <color name="content_bg">#e2cbaf</color>
+    <color name="list_bg">#e2cbaf</color>
+    <color name="list_bg2">#d4bb9c</color>
+    <color name="form_head_bg">#41464d</color>
+    <color name="form_content_bg">#efeff4</color>
+    <color name="form_head_vertical_line">#808080</color>
+    <color name="form_content_vertical_line">#e4e3e6</color>
+    <color name="horizontal_line">#c8c7cc</color>
+    <color name="popwin_titile">#6a3906</color>
+    <color name="adpter_gg_bgcolor1">#FFE800</color>
+    <color name="adpter_gg_bgcolor">#BEBEBE</color>
+    <color name="unlogin_bac_tab">#D26900</color>
+     <color name="rippelColor">#0099CC</color>
+     
+    <color name="lowblue">#0088d2</color>
+     <color name="light_lowblue">#33a0db</color>
+     <color name="light_blue">#0088d2</color>
+    <color name="grey_bottom">#3c4042</color>
+     <color name="light_grey">#efeff4</color>
+      <color name="txtgrey">#dbdbdb</color>
+     <color name="light_black">#34383e</color>
+    <color name="red">#ed2d3c</color>
+    <color name="bg_content">#efeff4</color>
+     <color name="welcomebg">#0088D2</color>
+     
+    <color name="black">#000000</color>
+    <color name="green">#ff4f8c0b</color>
+    <color name="blue">#ff1869af</color>
+    <color name="transparency">#00000000</color>
+    <color name="shadow">#1e000000</color>
+    <color name="grey">#ff5b5a5a</color>
+    <color name="light_gray">#ffebebeb</color>
+    <color name="deep_gray">#ff3b3b3b</color>
+
+</resources>

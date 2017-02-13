@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/file_list_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/titlelayout"
+        android:layout_height="@dimen/title_height"
+        layout="@layout/title_main" />
+
+    <com.hnws.fmt.view.MyGridView
+        android:id="@+id/bookShelf"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/title_height"
+        android:cacheColorHint="#00000000"
+        android:columnWidth="90.0dip"
+        android:fadingEdge="none"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/bookShelf"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_menu_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bookshelf_menu_open"
+            android:gravity="left" />
+
+        <GridView
+            android:id="@+id/gv_menu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/btn_menu_open"
+            android:background="#9920211e"
+            android:visibility="gone" >
+        </GridView>
+    </RelativeLayout>
+
+</RelativeLayout>

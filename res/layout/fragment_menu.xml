@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_gray" >
+
+    <LinearLayout
+        android:id="@+id/ll_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_user_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar_default" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:text="登   录"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_userinfo"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_userinfo"
+            android:orientation="vertical" >
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_backup"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_backup" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_backup"
+                    android:text="游戏中心" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_transfer"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_transfer" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_transfer"
+                    android:text="今日免费" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_history"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_history" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_history"
+                    android:text="附近的人" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_slidmenu_scan"
+                style="@style/menuItem"
+                android:onClick="OnClickSlidMenu" >
+
+                <ImageView
+                    android:id="@+id/iv_connect"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_transfer" />
+
+                <TextView
+                    android:id="@+id/tv_slidmenu_scan"
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_connect"
+                    android:text="扫一扫" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_menu_scanner"
+                style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_reward"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_reward" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_reward"
+                    android:text="摇一摇" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_menu_setting"
+                style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_setting"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_setting" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_setting"
+                    android:text="发    现" />
+            </RelativeLayout>
+
+            <RelativeLayout style="@style/menuItem" >
+
+                <ImageView
+                    android:id="@+id/iv_logout"
+                    style="@style/menuItemIcon"
+                    android:src="@drawable/icon_logout" />
+
+                <TextView
+                    style="@style/menuItemTitle"
+                    android:layout_toRightOf="@id/iv_logout"
+                    android:text="插    件" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
